@@ -1,13 +1,61 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.bg-light-color{
+  background-color: #f5ebe0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.bg-dark-color{
+  background-color: #d5bdaf;
+}
+
+.green {
+  color: #66a80f;
+}
+
+.red {
+  color: #e03131;
+}
+
+.friend{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  gap:20px;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+}
+
+.friend:hover{
+  background-color: #f5ebe0;
+}
+
+.avatar{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.btn{
+  font-weight: 600 !important;
+}
+
+.btn:hover{
+  background-color: #d5bdaf !important;
+ 
+}
+
+.form-control:focus{
+  box-shadow: 0 0 2px 4px #d5bdaf9e !important;
+  border-color: #d5bdaf;
+}
+
+.bill-form .input-group{
+  display: grid !important;
+  grid-template-columns: 1fr .5fr !important;
 }
