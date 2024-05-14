@@ -23,7 +23,7 @@ function App() {
       balance: 0,
     },
   ]);
- 
+
   const [selectedFriend, setSelectedFriend] = useState({});
 
   const addFriend = (friend) => {
@@ -31,20 +31,20 @@ function App() {
   }
 
   const handleSelectFriend = (friend) => {
-    setSelectedFriend((current)=>current.id === friend.id?{}:friend);
+    setSelectedFriend((current) => current.id === friend.id ? {} : friend);
   }
-  
+
   const toggleBillForm = () => {
     setSelectedFriend({});
   }
 
   return (
     <div className="app d-flex flex-wrap gap-5  m-auto py-5 container">
-     
+
       <AsideC friends={friends} addFriend={addFriend} onSelectFriend={handleSelectFriend} selectedFriend={selectedFriend} />
-       
-      {selectedFriend.id && <BillForm selectedFriend={selectedFriend} setFriends={setFriends} toggleBillForm={ toggleBillForm} />}
-      
+
+      {selectedFriend.id && <BillForm selectedFriend={selectedFriend} setFriends={setFriends} toggleBillForm={toggleBillForm} key={selectedFriend.id} />}
+
     </div>
   );
 }
